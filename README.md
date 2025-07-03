@@ -1,18 +1,39 @@
 # 🛡️ File Type Spoof Checker
 
-A simple Python tool that checks if a file’s **actual content type** matches its **file extension**. Helps detect spoofed or misleading files — a common tactic in malware delivery.
+**File Type Spoof Checker** is a simple Python tool that detects whether a file's actual content matches its extension. This helps identify files that are **masquerading** as something else — a common technique used by malware to bypass filters or trick users.
 
 ---
 
-## 🔍 What It Does
+## Features
 
-- Compares file extension type (e.g., `.jpg`) with actual file content
-- Flags suspicious files where types don’t match
-- Uses `python-magic` for accurate MIME detection (optional)
+- Detects mismatches between file extension and content
+- Uses MIME type comparison for accurate detection
+- Flags suspicious files (e.g., `.jpg` file that's really an `.exe`)
+- Optionally uses `python-magic` for better content detection
 
 ---
 
-## ⚙️ How to Use
+## Why This Matters
 
+Attackers often rename dangerous files (like `.exe`, `.js`) with safe-looking extensions (like `.jpg`, `.pdf`) to fool users or bypass security systems.
+
+This tool helps detect such **spoofed files**, making it a useful addition to your **basic malware analysis** or **file forensics** workflow.
+
+---
+
+## Requirements
+
+- Python 3.x
+
+Install dependencies (recommended):
 ```bash
-python file_type_spoof_checker.py path/to/your/file
+pip install python-magic-bin  # For Windows
+```
+```bash
+#For Linux/macOS
+pip install python-magic
+sudo apt install libmagic1  # Required for linux systems
+```
+## ✅ Sample Output:
+![]()
+
