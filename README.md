@@ -35,5 +35,7 @@ pip install python-magic
 sudo apt install libmagic1  # Required for linux systems
 ```
 ## ✅ Sample Output:
-![]()
+![image alt](https://github.com/sivaranjani-mspluto/File-Type-Spoof-Checker/blob/main/OutputScreenshot%202025-07-03%20074251.jpg)
+
+![image alt](https://github.com/sivaranjani-mspluto/File-Type-Spoof-Checker/blob/main/output2Screenshot%202025-07-03%20075409.jpg)
 
